@@ -1,0 +1,27 @@
+.products {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.products__item {
+  padding: 40px 20px 22px;
+  margin-bottom: 20px;
+  background-color: @base-white;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 30px 30px;
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

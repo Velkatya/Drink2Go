@@ -1,0 +1,40 @@
+.made-in {
+  display: flex;
+  justify-content: space-between;
+  width: 209px;
+  padding-top: 20px;
+  padding-left: 57px;
+  padding-bottom: 30px;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
+  }
+}
+
+.made-in__text {
+  color: @base-grey;
+}
+
+.made-in__link {
+  display: flex;
+  justify-content: space-between;
+  width: 113px;
+  color: @base-grey;
+
+  &:hover,
+  &:focus {
+    color: @primary-lighter;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
+}

@@ -1,0 +1,59 @@
+.filter-choice {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: @lightest-grey;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.filter-choice__wrapper {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: auto;
+    padding-top: 45px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 21px;
+  }
+}
+
+.filter-choice__title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding-right: 13px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 7px;
+  }
+}
+
+.filter-choice__selection {
+  width: 165px;
+  padding: 0 14px 0 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: @base-primary;
+  border: none;
+  background-color: @lightest-grey;
+  appearance: none;
+  background-image: url("../../img/icons/stack.svg#select-arrow");
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  background-position: top 10px right 11px;
+}

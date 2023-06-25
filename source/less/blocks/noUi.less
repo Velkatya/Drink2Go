@@ -1,0 +1,66 @@
+/* noUiSlider 1. скрываем стрелки у инпута с типом number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.noUi-target {
+  background: @light-grey;
+  border-radius: 100px;
+  box-shadow: none;
+  border: none;
+  height: 2px;
+}
+
+.noUi-connects {
+  height: 3px;
+}
+
+.noUi-connect {
+  background: @primary-lighter;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border-radius: 100px;
+  background-color: @base-white;
+  border: 2px solid @primary-lighter;
+
+  &:hover,
+  &:focus {
+    background-color: @lavender-latte;
+    outline: 2px solid @base-white;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    outline: 2px solid @base-white;
+    outline-offset: -4px;
+    background-color: @base-primary;
+  }
+
+  &:disabled {
+    background-color: @base-grey;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 25px;
+  height: 25px;
+  top: -10px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
+}
+
+.noUi-horizontal .noUi-handle-lower {
+  right: -25px;
+}

@@ -1,0 +1,40 @@
+.media {
+  padding: 20px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid @base-secondary;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+  }
+}
+
+.media__title {
+  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: @base-primary;
+}
+
+.media__item {
+  padding-bottom: 16px;
+}
+
+.media__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @base-black;
+
+  &:hover,
+  &:focus {
+    color: @primary-lighter;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
+}

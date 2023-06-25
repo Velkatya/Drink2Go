@@ -1,0 +1,79 @@
+.filters-price__slider {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 223px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+  }
+}
+
+.filters-price__inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding-top: 37px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 223px;
+    padding-top: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    padding-right: 7px;
+  }
+}
+
+.filters-price__input {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  height: 34px;
+  border: 2px solid @primary-lighter;
+  border-radius: 4px;
+  background-color: @base-white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  color: @base-black;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 127px;
+  }
+}
+
+.filters-price__input:focus-visible {
+  outline: 2px solid @primary-darker;
+  outline-offset: -2px;
+}
+
+.filters-price__input::placeholder {
+  color: @base-grey;
+}
+
+
+.filters-price__title {
+  padding-bottom: 30px;
+}
+
+.filters-price__decor {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: @base-grey;
+}

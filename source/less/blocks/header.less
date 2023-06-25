@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1440px;
+  }
+}
+
+.header__logo-link {
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 67px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    gap: 20px;
+  }
+}
+
+.header__logo-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 5px 0;
+    display: block;
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 16px;
+    color: @base-black;
+  }
+}
